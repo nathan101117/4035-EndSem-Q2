@@ -1,0 +1,97 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Styling the header */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Faculty cards container using grid layout */
+.faculty-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Each individual faculty card */
+.faculty-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for card */
+.faculty-card:hover {
+  background-color: #e6f0ff;
+}
+
+/* Faculty profile image */
+.faculty-card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Faculty name styling */
+.faculty-card h2 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+}
+
+/* Job title text */
+.faculty-card p {
+  margin: 5px 0;
+  font-style: italic;
+}
+
+/* Email link styling */
+.faculty-card a {
+  display: block;
+  margin: 10px 0;
+  color: #004080;
+  text-decoration: none;
+}
+
+/* Research interests tags */
+.faculty-card .tags {
+  margin-top: 10px;
+}
+
+.faculty-card .tags span {
+  display: inline-block;
+  background-color: #cce0ff;
+  color: #003366;
+  padding: 4px 8px;
+  margin: 2px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 600px) {
+  .faculty-card {
+    padding: 10px;
+  }
+
+  .faculty-card h2 {
+    font-size: 1rem;
+  }
+
+  .faculty-card .tags span {
+    font-size: 0.75rem;
+  }
+}
